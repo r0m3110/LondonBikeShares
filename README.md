@@ -1,5 +1,4 @@
-# London Bike Shares
-## Background
+# London Bike Shares Project Background
 
 **Company Overview:**
 Transport for London (TfL) is a government organization responsible for managing public transportation and road systems in London, UK. Established in 2000, TfL operates within the transportation industry, focusing on providing efficient, sustainable, and accessible travel options. Its diverse portfolio includes buses, underground trains, overground railways, and initiatives to promote cycling.
@@ -11,15 +10,15 @@ To achieve these goals, TfL prioritizes enhancing operational efficiency by redu
 
 ## Key Business Metrics:
 
-Bike Rentals: The total number of rides completed over a given period.
+**Bike Rentals:** The total number of rides completed over a given period.
 
-Utilization Rates: The percentage of bikes in active use at any given time.
+**Utilization Rates:** The percentage of bikes in active use at any given time.
 
-Operational Efficiency: Metrics such as docking station availability and bike redistribution times.
+**Operational Efficiency:** Metrics such as docking station availability and bike redistribution times.
 
-Customer Satisfaction: Measured through user feedback, return rates, and service accessibility.
+**Customer Satisfaction:** Measured through user feedback, return rates, and service accessibility.
 
-Environmental Impact: Reduction in CO2 emissions as a result of increased bike usage.
+**Environmental Impact:** Reduction in CO2 emissions as a result of increased bike usage.
 
 As a data analyst at TfL, I focus on leveraging these metrics to optimize operations, predict usage trends, and provide actionable insights that enhance service delivery and user satisfaction. By analyzing historical data and external factors like weather and holidays, I support strategic decision-making to ensure the bike-sharing program remains a reliable and sustainable travel option for Londoners.
 
@@ -39,28 +38,40 @@ Targed Python queries regarding various business questions can be found here [li
 
 An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
 
-## Data Structure & Initial Checks
+# Data Structure & Initial Checks
 The main database structure consists of a single table with a total of 17,414 records. This table captures detailed hourly bike-sharing data, weather conditions, and temporal information. A description of the table and its key columns is as follows:
 
 Main Table: Bike Sharing Data
+
 time: Timestamp of the recorded data, grouped hourly.
+
 count: Total number of bike rentals during the corresponding time interval.
+
 temp_real_C: Actual temperature in Celsius.
+
 temp_feels_like_C: Perceived temperature in Celsius.
+
 humidity: Humidity levels as a percentage.
+
 wind_speed_kph: Wind speed in kilometers per hour.
+
 weather: Weather conditions (e.g., clear, broken clouds, rain).
+
 is_holiday: Binary indicator of whether the day is a holiday (1 = holiday, 0 = non-holiday).
+
 is_weekend: Binary indicator of whether the day falls on a weekend (1 = weekend, 0 = weekday).
+
 season: Seasonal category (spring, summer, fall, winter).
-Initial Checks
+
+### Initial Checks
+
 The table has no missing values, ensuring completeness of the dataset.
 Columns have been cleaned and converted into appropriate data types (e.g., time to datetime, categorical variables encoded as strings or integers).
 Key temporal columns, such as time and season, were used to extract derived features like hour and weekday for further analysis.
 
-## Insights Deep Dive
+# Insights Deep Dive
 
-Hourly Patterns
+## Hourly Patterns
 
 Main Insight 1: Peak hours for bike rentals occur at 8:00 AM, 5:00 PM, and 6:00 PM, with average rentals of 2882, 2829, and 2629 respectively. This reflects strong demand during commuter rush hours. Operational efforts should ensure sufficient bike availability during these times to reduce user dissatisfaction.
 
@@ -68,7 +79,7 @@ Main Insight 2: Off-peak hours, particularly between 3:00 AM and 5:00 AM, see si
 
 [Visualization: Hourly Rentals Trends]
 
-Weekly Trends
+## Weekly Trends
 
 Main Insight 1: Rentals peak midweek, with Thursday showing the highest average of 1258 rentals, followed by Wednesday and Tuesday. This suggests commuting patterns drive demand during weekdays.
 
@@ -76,7 +87,7 @@ Main Insight 2: Weekend rentals are comparatively lower, with Sunday averaging 9
 
 [Visualization: Average Rentals by Day of the Week]
 
-Seasonal Trends
+## Seasonal Trends
 
 Main Insight 1: Summer is the most active season, averaging 1464 rentals, while winter experiences the lowest demand at 821 rentals. This highlights the influence of weather and daylight on bike usage. Winter promotions or operational adjustments may help mitigate low demand.
 
@@ -84,7 +95,7 @@ Main Insight 2: Spring and autumn show moderate activity, averaging 1103 and 117
 
 [Visualization: Seasonal Rental Trends]
 
-Weather Impact
+## Weather Impact
 
 Main Insight 1: Clear weather and scattered clouds result in the highest rentals, averaging 1162 and 1496 respectively. Conversely, snowfall and thunderstorms drastically reduce rentals, averaging 250 and 583.
 
@@ -92,7 +103,7 @@ Main Insight 2: Rainy conditions (712 rentals on average) show moderate usage, i
 
 [Visualization: Weather Condition Impact on Rentals]
 
-Recommendations
+# Recommendations
 
 Based on the insights and findings above, we would recommend the stakeholder team to consider the following:
 
@@ -111,7 +122,7 @@ Recommendation: Use predictive weather models to adjust bike availability dynami
 Observation: Off-peak hours between 3:00 AM and 5:00 AM experience minimal demand.
 Recommendation: Schedule maintenance and redistribution efforts during these hours to minimize service disruptions and optimize operations.
 
-Assumptions and Caveats:
+# Assumptions and Caveats:
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
