@@ -69,37 +69,72 @@ The table has no missing values, ensuring completeness of the dataset.
 Columns have been cleaned and converted into appropriate data types (e.g., time to datetime, categorical variables encoded as strings or integers).
 Key temporal columns, such as time and season, were used to extract derived features like hour and weekday for further analysis.
 
+# Interactive Dashboard
+
+An interactive Tableau dashboard was created to help stakeholders quickly explore trends, patterns, and relationships within the bike-sharing dataset. It supports operational planning and decision-making by offering intuitive visuals and actionable insights. Key features include:
+
+Total Bike Rides (Top Left):
+
+Displays the total number of bike rides for a selected date range.
+
+Provides a quick snapshot of overall system usage.
+
+Moving Average Line Graph (Top Right):
+
+Shows bike usage trends over time with interactive filters for moving averages (day, week, month) and duration sliders.
+
+Enables granular analysis of changes in ridership.
+
+Temperature vs. Wind Speed Heatmap (Bottom):
+
+Highlights the impact of weather conditions on ridership.
+
+Darker areas indicate higher usage, helping pinpoint optimal conditions for riding.
+
+Interactive Tooltips:
+
+Provide detailed data for each point, including hourly bike ride counts and weather conditions.
+
+Why It Matters:
+
+Understand Trends: Quickly identify high-demand periods and fluctuations.
+
+Plan Operations: Optimize bike redistribution and station resources based on demand.
+
+Leverage Insights: Adapt strategies to external factors like weather to boost ridership.
+
+
 # Insights Deep Dive
 
 ## Hourly Patterns
 
-Main Insight 1: Peak hours for bike rentals occur at 8:00 AM, 5:00 PM, and 6:00 PM, with average rentals of 2882, 2829, and 2629 respectively. This reflects strong demand during commuter rush hours. Operational efforts should ensure sufficient bike availability during these times to reduce user dissatisfaction.
+* Peak hours for bike rentals occur at 8:00 AM, 5:00 PM, and 6:00 PM, with average rentals of 2882, 2829, and 2629 respectively. This reflects strong demand during commuter rush hours. Operational efforts should ensure sufficient bike availability during these times to reduce user dissatisfaction.
 
-Main Insight 2: Off-peak hours, particularly between 3:00 AM and 5:00 AM, see significantly lower rentals, averaging fewer than 110 rides per hour. These periods may represent opportunities to focus redistribution efforts or conduct maintenance without impacting users.
+* Off-peak hours, particularly between 3:00 AM and 5:00 AM, see significantly lower rentals, averaging fewer than 110 rides per hour. These periods may represent opportunities to focus redistribution efforts or conduct maintenance without impacting users.
 
 <img width="1045" alt="Screenshot 2025-01-13 at 12 42 13 PM" src="https://github.com/user-attachments/assets/b0c29787-3e7f-4794-9007-35e0c307f24c" />
 
 ## Weekly Trends
 
-Main Insight 1: Rentals peak midweek, with Thursday showing the highest average of 1258 rentals, followed by Wednesday and Tuesday. This suggests commuting patterns drive demand during weekdays.
+* Rentals peak midweek, with Thursday showing the highest average of 1258 rentals, followed by Wednesday and Tuesday. This suggests commuting patterns drive demand during weekdays.
 
-Main Insight 2: Weekend rentals are comparatively lower, with Sunday averaging 959 rentals and Saturday 995 rentals. Marketing campaigns could encourage leisure usage during these days to balance demand.
+* Weekend rentals are comparatively lower, with Sunday averaging 959 rentals and Saturday 995 rentals. Marketing campaigns could encourage leisure usage during these days to balance demand.
 
 <img width="1049" alt="Screenshot 2025-01-13 at 12 44 56 PM" src="https://github.com/user-attachments/assets/11231558-966e-46c7-a809-95c981f7033d" />
 
 ## Seasonal Trends
 
-Main Insight 1: Summer is the most active season, averaging 1464 rentals, while winter experiences the lowest demand at 821 rentals. This highlights the influence of weather and daylight on bike usage. Winter promotions or operational adjustments may help mitigate low demand.
+* Summer is the most active season, averaging 1464 rentals, while winter experiences the lowest demand at 821 rentals. This highlights the influence of weather and daylight on bike usage. Winter promotions or operational adjustments may help mitigate low demand.
 
-Main Insight 2: Spring and autumn show moderate activity, averaging 1103 and 1178 rentals respectively. These seasons can serve as benchmarks for assessing weather-dependent fluctuations.
+* Spring and autumn show moderate activity, averaging 1103 and 1178 rentals respectively. These seasons can serve as benchmarks for assessing weather-dependent fluctuations.
 
 <img width="1034" alt="Screenshot 2025-01-13 at 12 48 43 PM" src="https://github.com/user-attachments/assets/6b1727a1-d86a-4e9e-8cff-e882e611f711" />
 
 ## Weather Impact
 
-Main Insight 1: Clear weather and scattered clouds result in the highest rentals, averaging 1162 and 1496 respectively. Conversely, snowfall and thunderstorms drastically reduce rentals, averaging 250 and 583.
+* Clear weather and scattered clouds result in the highest rentals, averaging 1162 and 1496 respectively. Conversely, snowfall and thunderstorms drastically reduce rentals, averaging 250 and 583.
 
-Main Insight 2: Rainy conditions (712 rentals on average) show moderate usage, indicating that some users may still rely on bikes despite adverse weather. Providing protective gear or targeted campaigns could enhance ridership in such conditions.
+* Rainy conditions (712 rentals on average) show moderate usage, indicating that some users may still rely on bikes despite adverse weather. Providing protective gear or targeted campaigns could enhance ridership in such conditions.
 
 <img width="1400" alt="Screenshot 2025-01-13 at 6 31 37 PM" src="https://github.com/user-attachments/assets/88453d20-f9b4-46af-aad1-ceca6868c4b6" />
 
@@ -107,19 +142,19 @@ Main Insight 2: Rainy conditions (712 rentals on average) show moderate usage, i
 
 Based on the insights and findings above, we would recommend the stakeholder team to consider the following:
 
-Observation: Peak rental hours occur at 8:00 AM, 5:00 PM, and 6:00 PM, driven by commuter activity.
+* Peak rental hours occur at 8:00 AM, 5:00 PM, and 6:00 PM, driven by commuter activity.
 Recommendation: Ensure adequate bike availability and docking capacity at major commuter hubs during these times to prevent shortages and maximize customer satisfaction.
 
-Observation: Weekend rentals are significantly lower compared to weekdays, averaging under 1000 rentals.
+* Weekend rentals are significantly lower compared to weekdays, averaging under 1000 rentals.
 Recommendation: Develop promotional campaigns or leisure-oriented events to boost weekend ridership, such as discounts or partnerships with local attractions.
 
-Observation: Winter sees the lowest bike rental activity, with an average of 821 rentals compared to 1464 in summer.
+* Winter sees the lowest bike rental activity, with an average of 821 rentals compared to 1464 in summer.
 Recommendation: Introduce winter-specific incentives, such as discounts on memberships or partnerships with weather-appropriate gear providers, to encourage ridership during colder months.
 
-Observation: Clear weather and scattered clouds result in the highest rentals, while snowfall and thunderstorms significantly reduce demand.
+* Clear weather and scattered clouds result in the highest rentals, while snowfall and thunderstorms significantly reduce demand.
 Recommendation: Use predictive weather models to adjust bike availability dynamically, ensuring resources are allocated effectively during high-demand conditions.
 
-Observation: Off-peak hours between 3:00 AM and 5:00 AM experience minimal demand.
+* Off-peak hours between 3:00 AM and 5:00 AM experience minimal demand.
 Recommendation: Schedule maintenance and redistribution efforts during these hours to minimize service disruptions and optimize operations.
 
 # Assumptions and Caveats:
