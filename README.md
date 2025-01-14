@@ -85,7 +85,7 @@ Main Insight 1: Rentals peak midweek, with Thursday showing the highest average 
 
 Main Insight 2: Weekend rentals are comparatively lower, with Sunday averaging 959 rentals and Saturday 995 rentals. Marketing campaigns could encourage leisure usage during these days to balance demand.
 
-[Visualization: Average Rentals by Day of the Week]
+<img width="1049" alt="Screenshot 2025-01-13 at 12 44 56 PM" src="https://github.com/user-attachments/assets/11231558-966e-46c7-a809-95c981f7033d" />
 
 ## Seasonal Trends
 
@@ -93,7 +93,7 @@ Main Insight 1: Summer is the most active season, averaging 1464 rentals, while 
 
 Main Insight 2: Spring and autumn show moderate activity, averaging 1103 and 1178 rentals respectively. These seasons can serve as benchmarks for assessing weather-dependent fluctuations.
 
-[Visualization: Seasonal Rental Trends]
+<img width="1034" alt="Screenshot 2025-01-13 at 12 48 43 PM" src="https://github.com/user-attachments/assets/6b1727a1-d86a-4e9e-8cff-e882e611f711" />
 
 ## Weather Impact
 
@@ -101,7 +101,7 @@ Main Insight 1: Clear weather and scattered clouds result in the highest rentals
 
 Main Insight 2: Rainy conditions (712 rentals on average) show moderate usage, indicating that some users may still rely on bikes despite adverse weather. Providing protective gear or targeted campaigns could enhance ridership in such conditions.
 
-[Visualization: Weather Condition Impact on Rentals]
+<img width="1400" alt="Screenshot 2025-01-13 at 6 31 37 PM" src="https://github.com/user-attachments/assets/88453d20-f9b4-46af-aad1-ceca6868c4b6" />
 
 # Recommendations
 
