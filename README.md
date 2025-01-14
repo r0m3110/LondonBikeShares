@@ -71,6 +71,8 @@ Key temporal columns, such as time and season, were used to extract derived feat
 
 # Interactive Dashboard
 
+<img width="1412" alt="Screenshot 2025-01-13 at 6 04 36 PM" src="https://github.com/user-attachments/assets/1737a2da-bd7b-4ab3-9580-bbb9e3fa70be" />
+
 An interactive Tableau dashboard was created to help stakeholders quickly explore trends, patterns, and relationships within the bike-sharing dataset. It supports operational planning and decision-making by offering intuitive visuals and actionable insights. Key features include:
 
 Total Bike Rides (Top Left):
