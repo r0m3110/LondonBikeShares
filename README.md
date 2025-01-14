@@ -77,7 +77,7 @@ Main Insight 1: Peak hours for bike rentals occur at 8:00 AM, 5:00 PM, and 6:00 
 
 Main Insight 2: Off-peak hours, particularly between 3:00 AM and 5:00 AM, see significantly lower rentals, averaging fewer than 110 rides per hour. These periods may represent opportunities to focus redistribution efforts or conduct maintenance without impacting users.
 
-[Visualization: Hourly Rentals Trends]
+<img width="1045" alt="Screenshot 2025-01-13 at 12 42 13 PM" src="https://github.com/user-attachments/assets/b0c29787-3e7f-4794-9007-35e0c307f24c" />
 
 ## Weekly Trends
 
